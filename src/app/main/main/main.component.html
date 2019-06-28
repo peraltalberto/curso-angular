@@ -1,3 +1,11 @@
-<p>
-  main works!
-</p>
+<form (ngSubmit)="login()">
+  <input name="mail" type="text" [(ngModel)]='user.email' />
+  <input name="pass" type="password" [(ngModel)]='user.password' />
+  <input type="submit"  />
+  <button type="button"  (click)="me()" >me</button>
+</form>
+<form (ngSubmit)="getInfoUser()">
+  <input name="user" type="text" [(ngModel)]='userId' />
+  <input type="submit"  />
+</form>
+{{userId}}
